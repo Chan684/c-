@@ -6,7 +6,7 @@ int main()
   cout<<"How many no of digit"<<endl;
   cin>>n;
     cin>>a;
-    for(int i=0;i<3;i++){
+    for(int i=0;i<n;i++){
         sum+= a%10;
         a/=10;
         
