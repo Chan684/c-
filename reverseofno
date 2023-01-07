@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n,t,rev=0,r;
+    cin>>n;
+    t=n;
+    while(t>0){
+        r=t%10;
+        t/=10;
+        rev=rev*10+r;
+    }
+    cout<<rev<<endl;
+    return 0;
+}
