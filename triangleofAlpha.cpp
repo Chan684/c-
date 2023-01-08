@@ -12,8 +12,6 @@ int main()
         cout<<(char)('A'+j);
     }cout<<endl;
 }
-    for(int t=6;t<t-5;t++){
-        cout<<' ';
-    }
+   
     return 0;
 }
