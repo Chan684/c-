@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num1,num2;
+    cin>>num1>>num2;
+     int dec1=0,dec2=0,power=1;
+    while(num1>0){
+        int digit=num1%2;
+         dec1+=digit*power;
+        power*=2;
+        num1/=10;
+    }
+    power=1;
+    while(num2>0){
+        int digit=num2%2;
+         dec2+=digit*power;
+        power*=2;
+        num2/=10;
+    }
+    if(dec1>dec2){
+        cout<<dec1<<endl;
+    }else{
+        cout<<dec2<<endl;
+    }
+    return 0;
+}
